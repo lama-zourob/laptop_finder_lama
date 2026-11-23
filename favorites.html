@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="performance">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorites - Student Laptop Finder</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="min-h-screen bg-page text-main">
+  <header id="header" class="border-b border-line bg-card"></header>
+  <main class="mx-auto max-w-6xl p-4">
+
+    <h1 class="mb-2 text-2xl font-bold">My favorites</h1>
+    <p id="summary" class="mb-4 text-muted"></p>
+    <button id="clear" class="btn-action mb-4">Clear all</button>
+    <div id="cards" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+  </main>
+  <footer id="footer" class="mt-8 border-t border-line p-4 text-center text-sm text-muted"></footer>
+  <script type="module" src="src/js/favorites.js"></script>
+</body>
+</html>

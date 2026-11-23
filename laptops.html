@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="performance">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptops - Student Laptop Finder</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="min-h-screen bg-page text-main">
+  <header id="header" class="border-b border-line bg-card"></header>
+  <main class="mx-auto max-w-6xl p-4">
+
+    <h1 class="mb-4 text-2xl font-bold">Laptop catalogue</h1>
+    <div id="filters" class="mb-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+      <input id="search" type="search" placeholder="Search name or brand" class="field">
+      <select id="category" class="field">
+        <option value="all">All categories</option>
+        <option value="ultrabook">Ultrabook</option>
+        <option value="gaming">Gaming</option>
+        <option value="2-in-1">2-in-1</option>
+        <option value="creator">Creator</option>
+        <option value="budget">Budget</option>
+      </select>
+      <input id="max-price" type="number" placeholder="Max price" class="field">
+      <input id="min-ram" type="number" placeholder="Min RAM (GB)" class="field">
+      <select id="sort" class="field">
+        <option value="none">Sort by...</option>
+        <option value="price-asc">Price: low to high</option>
+        <option value="price-desc">Price: high to low</option>
+        <option value="batteryHours-asc">Battery: low to high</option>
+        <option value="batteryHours-desc">Battery: high to low</option>
+        <option value="weightKg-asc">Weight: low to high</option>
+        <option value="weightKg-desc">Weight: high to low</option>
+      </select>
+    </div>
+    <p id="count" class="mb-4 text-muted"></p>
+    <div id="cards" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+  </main>
+  <footer id="footer" class="mt-8 border-t border-line p-4 text-center text-sm text-muted"></footer>
+  <script type="module" src="src/js/laptops.js"></script>
+</body>
+</html>

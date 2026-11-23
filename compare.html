@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="performance">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare - Student Laptop Finder</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="min-h-screen bg-page text-main">
+  <header id="header" class="border-b border-line bg-card"></header>
+  <main class="mx-auto max-w-6xl p-4">
+
+    <h1 class="mb-2 text-2xl font-bold">Compare laptops</h1>
+    <p class="mb-4 text-muted">Pick 2 to 4 laptops from your favorites.</p>
+    <div id="choices" class="mb-2 grid gap-2 sm:grid-cols-2 lg:grid-cols-3"></div>
+    <p id="msg" class="mb-4 font-semibold text-accent"></p>
+    <div id="table" class="overflow-x-auto rounded-xl border border-line bg-card"></div>
+  </main>
+  <footer id="footer" class="mt-8 border-t border-line p-4 text-center text-sm text-muted"></footer>
+  <script type="module" src="src/js/compare-page.js"></script>
+</body>
+</html>
